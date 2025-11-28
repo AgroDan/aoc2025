@@ -1,16 +1,7 @@
-# Advent of Code Template
+# Advent of Code 2025
 
-This exists just so I can start up a new repo for the AOC whenever it comes out. This includes the scripts and utils directory.
+Advent of Code is arguably one of my most anticipated events of the year. Christmas notwithstanding, with the Advent of Code challenges I can really just lose myself in the development frame of mind. I don't compete, I don't try speed runs, I only try my best at learning more about the incredible Go language. And if I happen to crunch through a puzzle quicker than expected, all the better!
 
-## NOTE: This is a template, so change things when initializing
+This time I'm armed with GH Copilot to assist. I will _never_ use it to solve the puzzle entirely or to even explain to me how best to solve it, but if I'm ever in a jam (or at least if I don't want to have to type things over and over and over again), then it can certainly come in handy.
 
-As of now, it doesn't look like Github allows for the usage of variables in this template, so certain things that are hard-coded into scripts will unfortunately remain that way. Make sure you do the following:
-
-- Update the year in each of the `prep` scripts
-- Update the dev location of your script(s) in each of the `prep` scripts
-- Initialize the Go Workspace `go work init`
-- Initialize the Utils module `go mod init utils`
-- Use the utils module `go work use utils`
-- Finally...edit this readme
-
-I would create the utils directory as my own repository elsewhere as Go works well with that, but for the sake of brevity I'd like to keep all the code I use for the Advent of Code in the same repository.
+Once more into the breach, dear friends!
