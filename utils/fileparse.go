@@ -3,6 +3,7 @@ package utils
 import (
 	"bufio"
 	"os"
+	"strings"
 )
 
 // This will parse a file based on how you expect the data.
@@ -42,6 +43,10 @@ func GetFileLines(filename string) ([]string, error) {
 	var lines []string
 
 	for fileScanner.Scan() {
+		// Now let's make sure we don't append a blank line...
+		if strings.TrimSpace(fileScanner.Text()) == "" {
+			continue
+		}
 		lines = append(lines, fileScanner.Text())
 	}
 
