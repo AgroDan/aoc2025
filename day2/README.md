@@ -3,16 +3,18 @@
 Plagued yet again with reading too fast and not truly understanding the specific instructions, which caused me some downtime and backing up a bit to re-write things. You'll see some rewriting of pattern-finding in the `utils.go` file as I read and re-read the instructions. Turns out that I was overcomplicating it yet again, and looking for _all_ patterns repetitions, when really for part 1 all I needed to do was just split the number and check if it's a repeat. I was creating huge slices of potential patterns to check for in gigantic numbers and getting it all wrong. After I re-read it for the third time did I realize that I was checking for way too many patterns.
 
 I personally felt my method for taking on Part 2 was clever, if I do say so myself. Since the rules stipulate now there should be a repeated pattern _through the entirety of the number_, then an invalid number is considered invalid if a number group repeats twice or more. So by that rule, the following numbers are considered **invalid**, which is to say the numbers that I'm specifically looking for:
-    - `2222`
-    - `1212`
-    - `123123`
-    - `9999599995`
+
+- `2222`
+- `1212`
+- `123123`
+- `9999599995`
 
 While the following numbers are considered **valid**, which is to say numbers that I should ignore:
-    - `1231231`
-    - `3334333`
-    - `9`
-    - `10110`
+
+- `1231231`
+- `3334333`
+- `9`
+- `10110`
 
 At first this tripped me up because I had to build patterns and make sure the pattern existed everywhere, but then I discovered that I could just _create_ a number based on specific patterns, and if it's _the same as the number I'm checking then it's considered invalid!_
 
