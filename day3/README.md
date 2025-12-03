@@ -9,7 +9,7 @@ Anyways, the logic I had was to use a stack and search from the left to the righ
 I'm so excited with the elegance here that I'm going to create a mermaid diagram to explain the logical steps for each digit! Given the line from the example: `818181911112111`
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Create Stack] --> B[Loop over Digits]
     B --> C[Check digit] 
     C --> D{Is Stack Empty?}
@@ -20,7 +20,7 @@ flowchart LR
     G -->|Yes|H{"Is the (Stack size + remaining digits) > 12?"}
     H -->|Yes|POP[Pop off the stack]
     H -->|No|NEXT
-    G -->|No|NEXT
+    G -->|No|PUSH
     E -->|No|NEXT
     NEXT[Next Digit]
     PUSH --> NEXT
