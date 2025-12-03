@@ -44,3 +44,7 @@ func (s *GStack[T]) Peek() (T, bool) {
 func (s *GStack[T]) IsEmpty() bool {
 	return len(s.element) == 0
 }
+
+func (s *GStack[T]) Size() int {
+	return len(s.element)
+}
