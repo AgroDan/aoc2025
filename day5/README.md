@@ -62,4 +62,4 @@ prevPosition = e.position
 
 So as long as `activeRanges` is greater trhan `0`, then you'll be adding the difference between the current position and the previous position!
 
-Honestly, the simplicity of this was so cool. Definitely one of those things where once you go over it on paper (or in my case, a whiteboard), it all just clicks, and you wonder why you never came close to anything that simple. At least that's how I felt.
+Honestly, the simplicity of this was so cool. Definitely one of those things where once you go over it on paper (or in my case, a whiteboard), it all just clicks, and you wonder why you never came close to anything that simple. At least that's how I felt. This surprisingly only took `513.2µs` to run! Note, _not_ milliseconds, *micro*seconds!
