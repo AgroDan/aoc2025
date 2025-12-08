@@ -2,7 +2,7 @@ package utils
 
 import "sync"
 
-// This will allow for similar behiavor to Python's functools.cache
+// This will allow for similar behavior to Python's functools.cache
 // feature, allowing computation to be cached and not recomputed.
 // Memoization baby.
 
