@@ -48,4 +48,4 @@ This was the meat & potatoes of the challenge right here. After a while I finall
 
 Part 2 was (mercifully) easier than Part 1. Basically keep doing what I've been doing, but keep creating unions until there is only one giant circuit. Then return the last two Junctions that created that final circuit, multiply the X-axes together, return the answer. Managed to get part two in about 30 minutes after part 1.
 
-Yikes, glad that's over with.
+Yikes, glad that's over with. This code finishes part 1 and 2 in about `215ms`.
