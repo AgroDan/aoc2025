@@ -11,7 +11,7 @@ Or, more specifically, a [Disjoint-set/Union-find Forest](https://en.wikipedia.o
 1. Determine the distances of every possible pair of points in the dataset  (referred to as edges), store in a slice.
 2. Sort the slice by distance.
 3. Create the Union-Find structure of both `parent` and `rank`, where `parent` is a list of every single junction box, and `rank` is a list of every single junction box initialized to a score of `0`.
-4. Define the `find()` anonymous function, which, given a junction box, which finds the "root" junction box (aka the "beginning" junction box in a circuit). If it just points to itself, it's a circuit of `1`:
+4. Define the `find()` anonymous function, which, given a junction box, finds the "root" junction box (aka the "beginning" junction box in a circuit). If it just points to itself, it's a circuit of `1`:
 
 ```go
 var find func(*Junction) *Junction
