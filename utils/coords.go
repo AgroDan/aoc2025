@@ -203,15 +203,6 @@ func IsInSquare(loc, topLeft, botRight Coord) bool {
 	return false
 }
 
-// helper for getting the absolute value so I don't have to do dumbass
-// int(float64()-float64()) conversions
-func Abs(x int) int {
-	if x < 0 {
-		return -x
-	}
-	return x
-}
-
 func ManhattanDistance(c1, c2 Coord) int {
 	// Given two coordinates, will return the Manhattan distance between them
 	return Abs(c1.X-c2.X) + Abs(c1.Y-c2.Y)
