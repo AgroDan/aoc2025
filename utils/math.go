@@ -41,3 +41,41 @@ func Max(a, b int) int {
 	}
 	return b
 }
+
+func MaxIntSlice(vals []int) int {
+	// Returns the highest value of the slice, this is so i don't need to
+	// do any datatype conversions
+	if len(vals) == 0 {
+		panic("MaxSlice called with empty slice")
+	}
+	maxVal := vals[0]
+	for _, v := range vals {
+		if v > maxVal {
+			maxVal = v
+		}
+	}
+	return maxVal
+}
+
+func MinIntSlice(vals []int) int {
+	// guess what this does!
+	if len(vals) == 0 {
+		panic("MinSlice called with empty slice")
+	}
+	minVal := vals[0]
+	for _, v := range vals {
+		if v < minVal {
+			minVal = v
+		}
+	}
+	return minVal
+}
+
+func SumIntSlice(vals []int) int {
+	// just sums all integers in a slice
+	sum := 0
+	for _, v := range vals {
+		sum += v
+	}
+	return sum
+}
